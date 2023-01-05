@@ -1,0 +1,32 @@
+
+.navbar_section {
+    background-image: url('../../assets/images/header_bg.png');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.navbar_inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero_form_section {
+    background: #fff;
+    padding: 20px 15px;
+}
+
+select, input[type="text"],  input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 3px;
+    outline: none;
+    margin-bottom: 8px;
+    border: 1px solid #EFF1F3;
+}
+::placeholder {
+    color: #000;
+}
