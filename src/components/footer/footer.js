@@ -1,33 +1,52 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import Accordion from 'react-bootstrap/Accordion';
+import './footer.css'
+import {footerTxt} from './footerApi';
+import { FaAngleUp , FaAngleDown} from "react-icons/fa";
+
 
 const Footer = () => {
-    
-    return(
 
+    const [show, setShow] = useState(false)
+
+    return(
         <Fragment>
             <div className="footer_section">
                 <div className="container">
-                    <div className="footer_area">
-                        <Accordion defaultActiveKey="0">
-                            <Accordion.Item eventKey="0">
-                                <Accordion.Header></Accordion.Header>
-                                <Accordion.Body>
-                                    <div className="footer_list">
-                                        <ul className="d-flex">
-                                            <li><a href="#">liver cirrhosis liver palmar erythema</a></li>
-                                            <li><a href="#">Liver Transplant in vaishali</a></li>
-                                            <li><a href="#">Liver Test</a></li>
-                                            <li><a href="#">Liver Transplant in dehradun</a></li>
-                                            <li><a href="#">Acute Liver Failure (ALF)</a></li>
-                                            <li><a href="#">Alcoholic Liver Disease</a></li>
-                                            <li><a href="#">Hepatitis B</a></li>
-                                            <li><a href="#">Liver Transplant in patparganj</a></li>
-                                        </ul>
+                    <div className="footer_area"> 
+                            <div className="footer_list">
+                                
+                               <div className="footer_btn">
+                                    <button onClick={ ()=> setShow(!show) } >Open Footer {show ? <FaAngleUp /> : <FaAngleDown />}</button>
+                               </div>
+                               
+                                {
+                                    show ?
+                                    <div className=" footer_list_inner open">
+                                    <p>Marlin Medical Assistance Pvt. Ltd. is an award winning & professionally managed international medical tourism company, based at New Delhi in India. MMA Pvt. Ltd. caters to the needs of Ministry of Health, Insurance Companies, Health Service Providers, Self-funded Business persons and Third Party Administrators besides individuals seeking affordable Medical Treatment and Travel Options.</p>
+                                       <ul>
+                                       {
+                                           footerTxt.map( (footer) => {
+                                               return <li key={footer.id}><a href="#">{footer.name}</a></li>
+                                           } )
+                                       }
+                                       </ul>
                                     </div>
-                                </Accordion.Body>
-                            </Accordion.Item> 
-                        </Accordion>
+                                    :
+                                    <div className="footer_list_inner close">
+                                    <p>Marlin Medical Assistance Pvt. Ltd. is an award winning & professionally managed international medical tourism company, based at New Delhi in India. MMA Pvt. Ltd. caters to the needs of Ministry of Health, Insurance Companies, Health Service Providers, Self-funded Business persons and Third Party Administrators besides individuals seeking affordable Medical Treatment and Travel Options.</p>
+                                       <ul>
+                                       {
+                                           footerTxt.map( (footer) => {
+                                               return <li key={footer.id}><a href="#">{footer.name}</a></li>
+                                           } )
+                                       }
+                                       </ul>
+                                    </div>
+                                }
+                                
+                               
+                            </div> 
                     </div>
                 </div>
             </div>

@@ -10,13 +10,13 @@ const Contact = () => {
             <div className="container">
                 <div className="contact_area"> 
                     <div className="contact_list">
-                        <ul className='d-flex'>
-                            <li>GET <span>free</span> ASSISTANCE</li>
+                        <ul className='d-flex align-items-center justify-content-around'>
+                            <li><p>GET <span>free</span> ASSISTANCE</p></li>
                             <li>
                                 <img src={img} alt="" />
                             </li>
                             <li>
-                                <a href="tel:+91 87500 42481">+91 87500 42481</a>
+                                <a href="tel:+91 87500 42481"> +91- 8984 900 900</a>
                             </li>
                         </ul>
                     </div>

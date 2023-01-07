@@ -1,6 +1,7 @@
 import React, { Fragment } from "react"; 
 import Row  from 'react-bootstrap/Row';
 import Col  from 'react-bootstrap/Col';
+import './summery.css'
 
 const Summery = () => {
     return (
@@ -18,7 +19,7 @@ const Summery = () => {
                             <Col md={6}>
                                 <img src="" alt="" />
                                 <div className="summery_vid">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Shvd46gNKTE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/Shvd46gNKTE" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
                                 </div>
                             </Col>
                         </Row>
