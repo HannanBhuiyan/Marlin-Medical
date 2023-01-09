@@ -57,11 +57,11 @@ const DoctorList = () => {
                             slidesPerGroup={6}
                             pagination={{ clickable: true }}
                     
-                            autoplay={{
-                                delay: 2000,
-                                disableOnInteraction: false
-                            }}
-                            loop={true}
+                            // autoplay={{
+                            //     delay: 2000,
+                            //     disableOnInteraction: false
+                            // }}
+                            // loop={true}
                             
                             onSlideChange={() => console.log('slide change')}
                             onSwiper={(swiper) => console.log(swiper)}

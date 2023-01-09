@@ -50,3 +50,27 @@ button.accordion-button {
     margin: auto;
     margin-bottom: 40px;
 }
+.readmorebtn {
+    border: none;
+    background: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.read_txt_list ul li {
+    list-style: none;
+}
+
+.read_txt_list ul {
+    margin: 0;
+    padding: 0;
+}
+
+.second_list ul {
+    margin: 0;
+    padding: 0;
+}
+
+.second_list ul li {
+    list-style: none;
+}

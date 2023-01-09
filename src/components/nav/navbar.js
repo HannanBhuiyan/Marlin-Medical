@@ -5,7 +5,8 @@ import Col from 'react-bootstrap/Col';
 import logo from '../../assets/images/logo.png';
 import { FaCheckCircle } from "react-icons/fa";
 import { FaInfoCircle } from "react-icons/fa";
-import hero_img from '../../assets/images/hero_img.png';
+// import hero_img from '../../assets/images/hero_img.png';
+import hero_img from '../../assets/images/hero_img-removebg-preview.png';
 import whatsapp from '../../assets/images/whatsapp.png';
 import { ToastContainer, toast } from 'react-toastify';
 
@@ -80,7 +81,7 @@ const Navbar = () => {
                             <Col md={8} >
                                 <div className="hero_content">
                                     <Row className="align-items-center">
-                                        <Col md={4}>
+                                        <Col md={5}>
                                             <div className="hero_image">
                                                 <img src={hero_img} alt="hero image" />
                                             </div>
@@ -97,7 +98,7 @@ const Navbar = () => {
                                                 </div>
                                             </div>
                                         </Col>
-                                        <Col md={2}></Col>
+                                        <Col md={1}></Col>
                                     </Row>
                                 </div>
                             </Col>
@@ -112,16 +113,8 @@ const Navbar = () => {
                                     }
                                    </pre> */}
                                     <form onSubmit={handelSubmit}>
-
                                         <input type="text" name="name" onChange={handelChange} value={formValue.name} placeholder="Name*" />
-                                        <div className="error">
-                                            <p>{formError.name} </p>
-                                        </div>
-
                                         <input type="text" name="phone" onChange={handelChange} value={formValue.phone} placeholder="Phone*"/>
-                                        <div className="error">
-                                            <p>{formError.phone}</p>
-                                        </div> 
                                         <input type="email" placeholder="Email"  /> 
                                         <textarea rows={3} placeholder="Write your query (Optional)"></textarea>
                                         <button className="hero_submit_btn" >Submit</button>

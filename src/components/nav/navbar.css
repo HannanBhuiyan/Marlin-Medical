@@ -88,6 +88,7 @@ textarea , select, input[type="text"],  input[type="email"] {
 
 .helo_right_content {
     color: #fff;
+    margin-left: 33px;
 }
 
 .helo_right_content h4 {
