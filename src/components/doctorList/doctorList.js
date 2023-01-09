@@ -75,7 +75,7 @@ const DoctorList = () => {
                                             <div className="s_body">
                                                 <h4>{name}</h4>
                                                 <p>{title}</p>
-                                                <p><strong>Hospital: </strong>{hospital_name}</p>
+                                                <p><strong>{hospital_name}</strong></p>
                                             </div>
                                         </div>
                                     </SwiperSlide> 

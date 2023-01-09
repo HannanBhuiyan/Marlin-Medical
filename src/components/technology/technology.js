@@ -42,16 +42,17 @@ const Technology = () => {
                                     //     delay: 2000,
                                     //     disableOnInteraction: false
                                     // }}
-                                    // loop={true}
+                                    // loop={true}  
+
                                     onSlideChange={() => console.log('slide change')}
                                     onSwiper={(swiper) => console.log(swiper)}
                                     >
                                     <SwiperSlide>
                                         <div className="slider_text">
                                             <h2>Trained Nursing Staffs</h2>
-                                            <Row className=" tech_slider_inner align-items-center">
+                                            <Row className=" tech_slider_inner align-items-center tech_sm_slide">
                                                 <Col>
-                                                    <img style={{ paddingLeft:"12px", borderRadius: '30px' }} width="100%" src={TechImg2} alt="" />
+                                                    <img style={{ paddingLeft:"12px", borderRadius: '30px', paddingBottom:"23px" }} width="100%" src={TechImg2} alt="" />
                                                 </Col>
                                                 <Col>
                                                     <p> 
@@ -64,17 +65,16 @@ const Technology = () => {
                                     <SwiperSlide>
                                         <div className="slider_text">
                                             <h2>Dedicated Isolation Ward </h2>
-                                            <Row className=" tech_slider_inner align-items-center">
+                                            <Row className=" tech_slider_inner align-items-center tech_sm_slide">
                                                 <Col>
-                                                    <img style={{ paddingLeft:"12px", borderRadius: '30px' }} width="100%" src={TechImg2} alt="" />
+                                                    <img style={{ paddingLeft:"12px", borderRadius: '30px', paddingBottom:"23px" }} width="100%" src={TechImg2} alt="" />
                                                 </Col>
                                                 <Col>
-                                                <p> 
-                                                    All the hospitals tied-up with Marlin are well-equipped with seamless anti-infection technology and reliable monitoring systems that minimize the infection rate and ensure patients safety. 
-                                                </p>
+                                                    <p> 
+                                                        All the hospitals tied-up with Marlin are well-equipped with seamless anti-infection technology and reliable monitoring systems that minimize the infection rate and ensure patients safety. 
+                                                    </p>
                                                 </Col>
                                             </Row>
-                                           
                                         </div>
                                     </SwiperSlide> 
                                 </Swiper>
@@ -84,7 +84,6 @@ const Technology = () => {
                     </div>
                 </div>
             </div>
-
 
         </Fragment>
     )

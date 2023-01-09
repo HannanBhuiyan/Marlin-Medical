@@ -22,7 +22,6 @@
     background: #E2ECF6;
     margin: 0px 30px;
     border-radius: 10px;
-    height: 294px;
 }
 .slider_text p {
     padding: 12px 20px 0px 0px;
@@ -47,10 +46,20 @@
     left: auto;
 }
 
+@media screen and (max-width: 425px) {
+    .slider_text p {
+        padding: 0px !important;
+        font-size: 10px;
+    }
+}
 @media screen and (max-width: 552px) {
     .slider_text p {
         padding: 14px 26px;
         font-size: 12px;
+    }
+    .tech_slider_inner img 
+    {
+        border-radius: 0px !important;
     }
 }
 
