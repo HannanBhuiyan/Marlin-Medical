@@ -13,7 +13,7 @@ const Contact = () => {
                         <ul className='d-flex align-items-center justify-content-around'>
                             <li><p>GET <span>free</span> ASSISTANCE</p></li>
                             <li>
-                                <img src={img} alt="" />
+                              <p style={{ color:"#fff" }}> helpdesk@marlinmedicalassistance.com</p>
                             </li>
                             <li>
                                 <a href="tel:+91 87500 42481"> +91- 8984 900 900</a>
